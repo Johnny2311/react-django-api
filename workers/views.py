@@ -1,11 +1,7 @@
-from rest_framework import generics
+from rest_framework import viewsets
 from .models import Worker
 from .serializers import WorkerSerializer
 
-class WorkerList(generics.ListCreateAPIView):
-    queryset = Worker.objects.all()
-    serializer_class = WorkerSerializer
-
-class WorkerDetail(generics.RetrieveUpdateDestroyAPIView):
+class WorkerViewSet(viewsets.ModelViewSet):
     queryset = Worker.objects.all()
     serializer_class = WorkerSerializer
