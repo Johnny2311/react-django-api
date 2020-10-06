@@ -34,7 +34,7 @@ class WorkersList extends React.Component {
   retrieveWorkers() {
     WorkerDataService.getAll()
       .then(response => {
-        this.setState({workers: response.data, loading: false});
+        this.setState({workers: response.data});
         console.log(response.data);
       })
       .catch(e => {

@@ -12,7 +12,7 @@ class Worker extends React.Component {
       address: "",
       phone: "",
       email: "",
-      dniNumber: "",
+      dni: "",
       deparment: ""
     };
 
@@ -55,7 +55,7 @@ class Worker extends React.Component {
       address: this.state.address,
       phone: this.state.phone,
       email: this.state.email,
-      dniNumber: this.state.dniNumber,
+      dni: this.state.dni,
       deparment: this.state.deparment
     };
 
@@ -142,13 +142,13 @@ class Worker extends React.Component {
                 />
               </div>
               <div className="form-group">
-                <label htmlFor="dniNumber">DNI number</label>
+                <label htmlFor="dni">DNI number</label>
                 <input
                   type="text"
                   className="form-control"
-                  id="dniNumber"
-                  name="dniNumber"
-                  value={this.state.dniNumber}
+                  id="dni"
+                  name="dni"
+                  value={this.state.dni}
                   onChange={this.handleChange}
                 />
               </div>
